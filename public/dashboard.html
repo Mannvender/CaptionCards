@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>IMG CAP</title>
+
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Material Kit CSS -->
+	<link rel="stylesheet" href="assets/css/material-kit.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body class="col-12">
+	<div class="row" style="min-height: 30px">
+		<div class="col-md-2 bg-dark"></div>
+		<div class="col-md-10"></div>
+	</div>
+	<div class="row" style="min-height: 2000px">
+		<div class="col-md-2 bg-dark">
+			<ul class="nav nav-pills nav-pills-info flex-column text-left px-4 font-weight-bold">
+				<li class="nav-item pb-3">
+					<a class="text-white active" href="#tab1" data-toggle="tab">
+						<i class="material-icons d-inline m-0 p-0" style="vertical-align: text-bottom">view_quilt</i>
+						<p class="d-inline" style="vertical-align: text-bottom">Dashboard</p>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="text-secondary" href="#tab2" data-toggle="tab">
+						<i class="material-icons d-inline m-0 p-0" style="vertical-align: text-bottom">settings</i>
+						<p class="d-inline" style="vertical-align: text-bottom">Settings</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-10 pl-5">
+			<h2>Images And Captions</h2>
+			<div class="row">
+				<div class="col-md-2">
+					<div class="card card-background dotted" id="add_new_image_card" style="cursor: pointer;">
+						<div class="card-body">
+							<div class="col">
+								<div class="row">
+									<h6 class="card-category d-inline py-5">Add New Image</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="card_container">
+			</div>
+		</div>
+	</div>
+
+
+	<div id="modal_container">
+		<div class="modal fade" id="imageUrlModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">New Image For Captioning</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="imageUrlInp">Image URL</label>
+							<input type="text" id="imageUrlInp" class="form-control">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" id="analyze_img_btn">Analyze</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/core/jquery.min.js"></script>
+	<script src="assets/js/core/popper.min.js"></script>
+	<script src="assets/js/bootstrap-material-design.js"></script>
+	<!-- Plugin for Date Time Picker and Full Calendar Plugin-->
+	<script src="assets/js/plugins/moment.min.js"></script>
+
+	<!-- Plugin for Select, full documentation here: https://silviomoreto.github.io/bootstrap-select -->
+	<script src="assets/js/plugins/bootstrap-selectpicker.js"></script>
+
+	<!-- Plugin for Tags, full documentation here: https://xoxco.com/projects/code/tagsinput/  -->
+	<script src="assets/js/plugins/bootstrap-tagsinput.js"></script>
+
+	<!-- Plugin for Fileupload, full documentation here: https://www.jasny.net/bootstrap/javascript/#fileinput -->
+	<script src="assets/js/plugins/jasny-bootstrap.min.js"></script>
+
+	<!-- Plugin for Small Gallery in Product Page -->
+	<script src="assets/js/plugins/jquery.flexisel.js"></script>
+
+	<!-- Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+	<script src="assets/js/plugins/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Plugin for the Sliders, full documentation here: https://refreshless.com/nouislider/ -->
+	<script src="assets/js/plugins/nouislider.min.js"></script>
+
+	<!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
+	<script src="assets/js/material-kit.js?v=2.0.0"></script>
+
+	<script src="assets/js/local-storage.js"></script>
+
+
+	<script src="assets/js/old-image.js"></script>
+	<script src="assets/js/new-image.js"></script>
+	<script src="assets/js/service.js"></script>
+</body>
+
+</html>

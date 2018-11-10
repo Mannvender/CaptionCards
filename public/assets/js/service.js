@@ -1,0 +1,2 @@
+oldImage.init();
+newImage.init();

@@ -35,7 +35,7 @@ const newImage = (() => {
 			beforeSend: function(jqXHR) {
 				jqXHR.setRequestHeader("Content-Type", "application/json");
 				jqXHR.setRequestHeader("Ocp-Apim-Subscription-Key",
-					encodeURIComponent('6aa62e2f8b444d119475f842f8500585'));
+					encodeURIComponent('990d758bd5aa48dc87e115f96020db74'));
 			},
 
 			type: "POST",
